@@ -112,14 +112,15 @@ a {
 }
 
 
-.landing_page .info .sign_in form input[type="email"],
-.landing_page .info .sign_in form input[type="password"] {
+.landing_page .info .sign_in form input,
+.landing_page .info .sign_in form input {
     padding: 10px 15px;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid white;
     margin-bottom: 110px;
     outline: none;
+    color: var(--primary-color);
 }
 
 .landing_page .info .sign_in form i {
@@ -127,6 +128,10 @@ a {
     top: 193px;
     right: 10px;
     cursor: pointer;
+}
+
+.landing_page .info .sign_in form .eye {
+    display: none;
 }
 
 .landing_page .info .sign_in form .submitted {
@@ -151,6 +156,7 @@ a {
     outline: none;
     margin-right: 10px;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 .landing_page .info .sign_in form .submitted a {
