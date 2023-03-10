@@ -118,21 +118,24 @@ a {
 
 .card .submitted {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
 }
 
 .card .submitted .buttons {
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card input[type="submit"] ,
 .card .submitted .buttons a {
-    width: fit-content;
     font-family: 'Playfair Display', serif;
     background-color: rgba(0, 0, 0, .56);
     color: var(--primary-color);
-    padding: 10px 50px;
+    padding: 10px 20px;
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -142,8 +145,13 @@ a {
     border: none;
     outline: none;
     cursor: pointer;
-    margin: auto;
-    margin-left: 10px;
+    width: calc(90% / 2);
+    margin-bottom: 0;
+}
+
+.error {
+    font-size: 1.5rem;
+    color: #ff4040;
 }
 
 /************************ End Sign Up *********************************/
