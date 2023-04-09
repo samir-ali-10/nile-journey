@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/******************************** Global **********************************/
+
+:root {
+    --bg-color: #DFC5A3;
+    --secondary-color1: #050101;
+    --secondary-color2: #2e1a0e;
+    --kaushan-font: 'Kaushan Script', cursive;
+    --lobster-font: 'Lobster', cursive;
+    --gruppo-font: 'Gruppo', cursive;
+    --cardo-font: 'Cardo', serif;
+    --avro-font: 'Arvo', serif;
+    --small-card-color: #958068;
+    --special-card-color: #634137;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.profile {
+    background-image: url("../img/profile_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 140px;
+}
+
+.profile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #646361;
+    opacity: .7;
+}
+
+.profile .content {
+    position: relative;
+    padding: 10px;
+}
+
+.profile nav {
+    margin-bottom: 30px;
+}
+
+.profile nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.profile nav .logo .logo_up {
+    color: white;
+    font-size: 30px;
+    font-family: var(--lobster-font);
+    margin-left: 10px;
+}
+
+.profile nav .logo .navigation {
+    display: flex;
+    margin-left: 50px;
+}
+
+.profile nav .logo .navigation li {
+    margin-right: 50px;
+}
+
+.profile nav .logo .navigation li a {
+    color: white;
+    font-family: var(--cardo-font);
+    font-size: 18px;
+}
+
+.profile .container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.profile .container .profile_card {
+    background-color: rgba(0, 0, 0, .55);
+    width: 25%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--avro-font);
+}
+
+.profile .container .profile_card .header i {
+    font-size: 6rem;
+    margin-bottom: 50px;
+}
+
+.profile .container .profile_card .content {
+    text-align: left;
+}
+
+.profile .container .profile_card ul li {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.profile .container .profile_card ul li i {
+    margin-right: 30px;
+}
+
+.profile .container .profile_card ul li a {
+    color: white;
+}
+
+.profile .container .profile_card .log_out {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.profile .container .info_card {
+    background-color: rgba(0, 0, 0, .55);
+    width: 65%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 50px 20px;
+}
+
+.profile .container .info_card form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile .container .info_card form > div {
+    width: calc(90% / 2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.profile .container .info_card form > div label {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.profile .container .info_card form > div input:not(input[type="submit"]) {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+}
+
+.profile .container .info_card form .gender h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.profile .container .info_card form .gender label {
+    margin-right: 20px;
+}
+
+.profile .container .info_card form > div input[type="submit"] {
+    width: fit-content;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.log_out_screen {
+    background-color: white;
+    padding: 20px;
+    width: fit-content;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.log_out_screen h2 {
+    font-size: 2rem;
+    font-family: var(--kaushan-font);
+}
+
+.log_out_screen p {
+    font-family: var(--avro-font);
+}
+
+.log_out_screen .buttons button {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.log_out_screen .buttons .cancel {
+    background-color: transparent;
+}
+
+.log_out_screen .buttons .logout {
+    background-color: black;
+    color: white;
+    border: none;
+}

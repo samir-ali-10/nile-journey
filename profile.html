@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Nile Journey</title>
+</head>
+
+<body>
+
+    <div class="profile">
+        <div class="content">
+            <nav>
+                <div class="logo">
+                    <i class="fa-regular fa-compass" style="color: #ffffff;"></i>
+                    <a class="logo_up" href="#">Nile Journey</a>
+                    <ul class="navigation">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="profile_card">
+                    <div class="header">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li><i class="fa-regular fa-pen-to-square" style="color: #ffffff;"></i><a href="#">Edit
+                                    Profile</a></li>
+                            <li><i class="fa-solid fa-lock" style="color: #ffffff;"></i><a href="#">Privacy</a></li>
+                            <li><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i><a href="#">Help &
+                                    Support</a></li>
+                            <li><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i><a href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="log_out">Log Out</button>
+                </div>
+                <div class="info_card">
+                    <form>
+                        <div class="f_name">
+                            <label for="fName">First Name</label>
+                            <input type="text" name="fName" id="fName">
+                        </div>
+                        <div class="l_name">
+                            <label for="lName">Last Name</label>
+                            <input type="text" name="lName" id="lName">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="gender">
+                            <h2>Gender</h2>
+                            <div class="genders">
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="birth">
+                            <label for="birth">Birth Date</label>
+                            <input type="date" name="birth" id="birth">
+                        </div>
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <input type="text" name="country" id="country">
+                        </div>
+                        <div class="save">
+                            <input type="submit" value="Save Changes">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

@@ -9,15 +9,15 @@ let error = document.querySelector(".error");
 submit.addEventListener("click", () => {
     if (password.value != confirmPassword.value) {
         error.innerHTML = "Passwords doesn't match";
+        mySubmitFunction()
     }
 })
 
 function mySubmitFunction(e) {
     if (password.value != confirmPassword.value) {
         e.preventDefault();
-        someBug();
-        return false;
+        // someBug();
+        // return false;
     }
-
 }
 
